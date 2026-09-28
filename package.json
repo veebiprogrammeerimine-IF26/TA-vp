@@ -1,0 +1,31 @@
+{
+  "name": "ta-vp",
+  "version": "1.0.0",
+  "description": "Veebiprogrammeerimise tundides tehtud veeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://andrusrinde@github.com/veebiprogrammeerimine-IF26/TA-vp.git"
+  },
+  "keywords": [
+    "Node.Js",
+    "veeb",
+    "Tallinna",
+    "Ülikool",
+    "DTI",
+    "üliõpilanbe",
+    "koolitöö"
+  ],
+  "author": "Andrus Rinde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veebiprogrammeerimine-IF26/TA-vp/issues"
+  },
+  "homepage": "https://github.com/veebiprogrammeerimine-IF26/TA-vp#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
