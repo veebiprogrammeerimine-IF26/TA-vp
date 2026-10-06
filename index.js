@@ -19,14 +19,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyparser.urlencoded({extended: false}));
 
-//loon andmebaasiühenduse
-/* const conn = mysql.createConnection({
-	host: 'localhost',
-	user: 'if26',
-	password: 'ifikas26',
-	database: 'if26_inga_petuhhov_TA'
-}); */
-
 //marsruudid
 app.get('/', (req, res)=>{
 	//res.send('Express.js läks käima ja serveerib meile veebi.');
