@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Andrus Rinde, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Eesti filmid</h1>
+	<p>Siin lehel on näha filmidega seotud ameteid.</p>
+	<hr>
+	<ul>
+		<li><a href="/">Avalehele</a></li>
+		<li><a href="/eestifilm">Eesti filmi avaleht</a></li>
+	</ul>
+	<hr>
+    <ol>
+        <% professionList.forEach (function(profession){%>
+        <li>Amet: <%=profession.title%> <br> description: <%=profession.description %>,<br>
+         <% }); %>
+    </ol>
+</body>
+</html>

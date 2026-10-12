@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Andrus Rinde, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Eesti filmid</h1>
+	<p>Siin lehel on näha filmidega seotud ameteid.</p>
+	<hr>
+	<ul>
+		<li><a href="/">Avalehele</a></li>
+		<li><a href="/eestifilm">Eesti filmi avaleht</a></li>
+	</ul>
+	<hr>
+    <form method="POST">
+
+       <label for="professionInput">Ameti nimi</label>
+       <input
+           id="professionInput"
+           name="professionInput"
+           type="text"
+           placeholder="Amet..."
+           value="<%= title || '' %>"
+           required
+       >
+
+        <br>
+        <label for="descriptionInput">Kirjeldus</label>
+         <input
+             id="descriptionInput"
+             name="descriptionInput"
+             type="text"
+             placeholder="Kirjeldus..."
+             value="<%= description || '' %>"
+             required
+         >
+         <br>
+
+         <input id="movieSubmit" name = "movieSubmit" type="submit" value = "Salvesta">
+        </form>
+		<p><%= notice || '' %></p>
+</body>
+</html>

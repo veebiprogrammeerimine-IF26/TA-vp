@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Andrus Rinde, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Eesti filmid</h1>
+	<p>Siin lehel saad lisada Eesti filme.</p>
+	<hr>
+	<ul>
+		<li><a href="/">Avalehele</a></li>
+		<li><a href="/eestifilm">Eesti filmi avaleht</a></li>
+	</ul>
+	<hr>
+	<form method="POST">
+		<label for="titleInput">Filmi pealkiri</label>
+		<input id="titleInput" name="titleInput" type="text" placeholder="Pealkiri ..." maxlength="100" value="<%= movieTitle %>" required>
+		<br>
+		<label for="yearInput">Valmimisaasta</label>
+		<input id="yearInput" name="yearInput" type="number" value="<%= releaseYear %>" required>
+		<br>
+		<label for="durationInput">Kestus (minutites)</label>
+		<input id="durationInput" name="durationInput" type="number" value="<%= duration %>" required>
+		<br>
+		<label for="descriptionInput">Kirjeldus</label>
+		<input id="descriptionInput" name="descriptionInput" type="text" placeholder="Kirjeldus ..." maxlength="1000" value="<%= description %>">
+		<br>
+		<input id="movieSubmit" name="movieSubmit" type="submit" value="Salvesta">
+	</form>
+	<p><%= notice %>
+</body>
+</html>
