@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Andrus Rinde, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Galeriisse fotode üleslaadimine</h1>
+	<p>Siin lehel saab fotosid galeriisse lisada.</p>
+	<hr>
+	<ul>
+		<li><a href="/">Avalehele</a></li>
+	</ul>
+	<hr>
+	<form method="POST" enctype="multipart/form-data">
+		<label for="photoInput">Vali soovitud pildifail (.jpg)</label>
+		<input id="photoInput" name="photoInput" type="file">
+		<br>
+		<label for="altInput">Foto alternatiivtekst (alt)</label>
+		<input id="altInput" name="altInput" type="text" placeholder="Pildil on ...">
+		<br>
+		<input id="privacyInput1" name="privacyInput" type="radio" value="1" checked>
+		<label for="privacyInput1">Privaatne (ainult ise näen)</label>
+		<br>
+		<input id="privacyInput2" name="privacyInput" type="radio" value="2">
+		<label for="privacyInput2">Sisseloginud kasutajatele</label>
+		<br>
+		<input id="privacyInput3" name="privacyInput" type="radio" value="3">
+		<label for="privacyInput3">Avalik (kõik näevad)</label>
+		<br>
+		<input id="photoSubmit" name="photoSubmit" type="submit" value="Lae üles">
+	</form>
+</body>
+</html>
