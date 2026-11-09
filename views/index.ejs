@@ -12,11 +12,15 @@
 	<hr>
 	<p>Täna on <%= dayNow %> <%= dateNow %>, kell oli lehe avamise hetkel: <%= timeNow %>.</p>
 	<ul>
+		<li><a href="/signup">Kasutajakonto loomine</a></li>
+		<li><a href="/signin">Logi sisse</a></li>
+		<br>
 		<li><a href="/tlu">Natuke Tallinna Ülikoolist</a></li>
 		<li><a href="/vanasona">Tänane vanasõna</a></li>
 		<li><a href="/regvisit">Külastuse registreerimine</a></li>
 		<li><a href="/eestifilm">Eesti film</a></li>
-		<li><a href="/galleryPhotoUpload">Galeriipiltide üleslaadimine</a></li>
 	</ul>
+	<h2>Uusim avalik foto</h2>
+    <img src="<%= imgFile %>" alt="<%= imgAlt %>">
 </body>
 </html>

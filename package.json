@@ -26,11 +26,13 @@
   },
   "homepage": "https://github.com/veebiprogrammeerimine-IF26/TA-vp#readme",
   "dependencies": {
+    "argon2": "^0.45.2",
     "dotenv": "^18.0.5",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
     "multer": "^2.4.0",
     "mysql2": "^3.24.5",
-    "sharp": "^0.35.5"
+    "sharp": "^0.35.5",
+    "validator": "^13.15.35"
   }
 }

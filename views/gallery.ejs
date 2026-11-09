@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Andrus Rinde, veebiprogrammeerimine</title>
+</head>
+<body>
+	<img src="../pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Fotogalerii</h1>
+	<hr>
+	<ul>
+		<li><a href="/home">Avalehele</a></li>
+		<li><a href="/logout">Logi välja</a></li>
+	</ul>
+	<hr>
+	<% galleryData.forEach(function(image){ %>
+      <img src="<%=imagehref%><%=image.src%>" alt="<%=image.alt%>">
+    <% }); %>
+</body>
+</html>
